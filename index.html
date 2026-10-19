@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ametista Seeds — Ideen-Inkubator mit KI</title>
+<meta name="description" content="Ametista Seeds: Ideen-Inkubator mit KI. Die Website finden Sie unter ametistaseeds.com.">
+<link rel="icon" href="assets/simbolo-claro.svg" type="image/svg+xml">
+<link rel="canonical" href="https://ametistaseeds.com/de/">
+<style>
+@font-face{font-family:"Marcellus";src:url(assets/Marcellus-latin.woff2) format("woff2");font-display:swap}
+@font-face{font-family:"Ametista Texto";src:url(assets/AmetistaTexto-Light.woff) format("woff");font-weight:300;font-display:swap}
+@font-face{font-family:"Ametista Texto";src:url(assets/AmetistaTexto-Regular.woff) format("woff");font-weight:400;font-display:swap}
+:root{--fundo:#f7f5f9;--tinta:#2a2530;--suave:#5d5866;--ametista:#7a5da0;--ametista-escura:#5b4380;--verde:#3a6b45;--linha:#dcd8e2}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;min-height:100%;display:flex;flex-direction:column;background:var(--fundo);color:var(--tinta);font-family:"Ametista Texto","Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;position:relative;overflow-x:hidden}
+body::before,body::after{content:"";position:fixed;width:min(52vw,620px);aspect-ratio:600/420;background-repeat:no-repeat;background-size:contain;pointer-events:none;opacity:.8;z-index:0}
+body::before{top:0;right:0;background-image:url(assets/trama-sup-dir.svg)}
+body::after{bottom:0;left:0;background-image:url(assets/trama-inf-esq.svg)}
+main{flex:1;display:grid;place-items:center;padding:3rem 1.25rem;position:relative;z-index:1;text-align:center}
+.simbolo{width:min(46vw,210px);height:auto;margin:0 auto 2rem;animation:surge 1.2s ease both}
+.nome{font-family:"Marcellus",Georgia,serif;letter-spacing:.24em;font-size:clamp(1.5rem,5.2vw,2.4rem);margin:0 0 .9rem;font-weight:400;animation:surge 1.2s .15s ease both}
+.nome .am{color:var(--ametista)}.nome .sd{color:var(--verde)}
+.slogan{font-weight:300;font-size:clamp(1.05rem,3.4vw,1.3rem);color:var(--suave);margin:0 0 2.4rem;animation:surge 1.2s .3s ease both}
+.botao{display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 1.8rem;border-radius:999px;background:var(--ametista);color:#fff;text-decoration:none;font-size:1.02rem;letter-spacing:.03em;box-shadow:0 14px 30px -14px rgba(74,52,104,.55);transition:background .2s,transform .2s;animation:surge 1.2s .45s ease both}
+.botao:hover{background:var(--ametista-escura);transform:translateY(-1px)}
+.botao:focus-visible{outline:2px solid var(--ametista);outline-offset:4px}
+.outras{margin:1.4rem 0 0;font-size:.88rem;color:var(--suave);animation:surge 1.2s .6s ease both}
+.outras a{color:var(--ametista-escura);text-underline-offset:.2em}
+footer{position:relative;z-index:1;padding:1.4rem 1.25rem 1.8rem;text-align:center;font-size:.8rem;color:var(--suave)}
+footer a{color:var(--suave);margin:0 .5rem}
+@keyframes surge{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main>
+  <div>
+    <img class="simbolo" src="assets/simbolo-claro.svg" alt="Symbol von Ametista Seeds: ein Samen aus Amethyst-Kristall mit Wurzel und drei grünen Blättern in einem silbernen Ring." width="210" height="254">
+    <h1 class="nome"><span class="am">AMETISTA</span> <span class="sd">SEEDS</span></h1>
+    <p class="slogan">Ideen-Inkubator mit KI</p>
+    <a class="botao" href="https://ametistaseeds.com/de/">Zur Website <span aria-hidden="true">→</span></a>
+    <p class="outras">Auch auf <a href="https://ametistaseeds.com/" hreflang="pt-BR" lang="pt-BR">Português</a> und <a href="https://ametistaseeds.com/en/" hreflang="en" lang="en">English</a></p>
+  </div>
+</main>
+<footer>
+  © 2026 Ametista Seeds
+  <a href="https://ametistaseeds.com/impressum.html">Impressum</a>
+  <a href="https://ametistaseeds.com/datenschutz.html">Datenschutz</a>
+</footer>
+</body>
+</html>
